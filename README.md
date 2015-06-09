@@ -1,4 +1,5 @@
-# Ascio Hostbill Registrar plugin
+# Ascio Hostbill registrar-plugin
+## Plugin for registering domains with Hostbill via the Ascio registrar
 
 Hostbill Ascio Plugin 
 
