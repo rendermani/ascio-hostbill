@@ -1,7 +1,6 @@
-# Ascio Hostbill registrar-plugin
-## Plugin for registering domains with Hostbill via the Ascio registrar
+# Ascio-Hostbill domain registrar plugin
 
-Installation instruction 
+##Installation instruction 
 
 * Place all files in the Hostbill includes/modules/Domain directory
 * You can't checkout directly into the Domain directory because it is not empty
