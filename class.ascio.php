@@ -176,7 +176,6 @@ Class Ascio extends DomainModule {
 				'DomainName' 	=> $this->name,
 				'RegPeriod' 	=>  $this->period,
 				'AuthInfo'		=> 	$this->options['epp_code'],
-				'DomainPurpose' =>  $params["Application Purpose"],
 				'Registrant' 	=> $this->mapToContact("registrant"),
 				'AdminContact' 	=> $this->mapToContact("admin"), 
 				'TechContact' 	=> $this->mapToContact("tech"), 
@@ -193,13 +192,13 @@ Class Ascio extends DomainModule {
 	    );
 	}
 	// map contact from Ascio to Hostbill
-	function mapToContact($type,$params) {   		
+	function mapToContact($type,$params) {  
 		if(!$params) $params = $this->domain_contacts[$type];
+		
+
 		$contactName = array();
 		if($type == "registrant") {
 			$contactName["Name"] = $params["firstname"] . " " . $params["lastname"];
-			//$contactName["NexusCategory"] = $params["Nexus Category"];
-			//$contactName["RegistrantNumber"] = "55203780600585";
 		} else {
 			$prefix = strtolower($type);
 			$contactName["FirstName"] = $params["firstname"];
@@ -218,6 +217,13 @@ Class Ascio extends DomainModule {
 			'Phone'			=>  $this->isoPhone($params["phonenumber"],$params["country"]),
 			'Fax' 			=> 	$this->isoPhone($params["phonenumber"],$params["country"])
 		);
+		foreach($this->domain_config as $key =>  $value) {
+			$tokens = split("\.",$key);
+			$prefix = $tokens[0];
+			if(strtolower($prefix)==$type) {
+				$contact[$tokens[1]] = $value["value"] | $value["variable_id"];
+			}
+		}
 		return array_merge($contactName,$contact);
 	}
 	function mapToNameservers() {
