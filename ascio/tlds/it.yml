@@ -1,0 +1,288 @@
+---
+- 
+  id: 2
+  type: input
+  required: 0
+  name: VAT or Social Security Number
+  key: 
+  variable: Registrant.RegistrantNumber
+  description: >
+    To be filled in with the registrants VAT
+    number or social security number.
+  category: 
+  product_id: 11
+  copy_of: 0
+  options: 3
+  config: [ ]
+  sort_order: 1
+  ftype: input
+  premade: true
+  items: 
+    - 
+      id: 2
+      category_id: 2
+      name: 
+      variable_id: 
+      sort_order: 0
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+- 
+  id: 3
+  type: select
+  required: 0
+  name: Registrant Type
+  key: 
+  variable: Registrant.RegistrantType
+  description: The type of registrant
+  category: 
+  product_id: 11
+  copy_of: 0
+  options: 51
+  config: 
+    conditionals: [ ]
+  sort_order: 2
+  ftype: select
+  premade: true
+  items: 
+    - 
+      id: 5
+      category_id: 3
+      name: Italian and foreign physical person
+      variable_id: 1
+      sort_order: 2
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 7
+      category_id: 3
+      name: Italian Company
+      variable_id: 2
+      sort_order: 3
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 8
+      category_id: 3
+      name: Italian Freelance
+      variable_id: 3
+      sort_order: 4
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 9
+      category_id: 3
+      name: Italian Associations
+      variable_id: 4
+      sort_order: 5
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 10
+      category_id: 3
+      name: Italian NGOs (non-profit)
+      variable_id: 5
+      sort_order: 6
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 11
+      category_id: 3
+      name: Italian Governmental bodies
+      variable_id: 6
+      sort_order: 7
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 12
+      category_id: 3
+      name: >
+        Applicants equivalent to points 2-6 but
+        located outside of Italy
+      variable_id: 7
+      sort_order: 8
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
