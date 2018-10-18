@@ -1,4 +1,4 @@
-<?
+<?php
 Class SessionCache {
 	public static function get() {
 		$filename = dirname(realpath ( __FILE__ ))."/ascio-session.txt";
