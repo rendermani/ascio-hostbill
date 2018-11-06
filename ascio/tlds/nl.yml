@@ -12,7 +12,7 @@
   category: 
   product_id: 12
   copy_of: 0
-  options: 2
+  options: 3
   config: [ ]
   sort_order: 0
   ftype: input
@@ -62,7 +62,13 @@
   copy_of: 0
   options: 3
   config: 
-    conditionals: [ ]
+    conditionals: 
+      1: 
+        val: 26
+        action: hide
+        target: 5
+        targetname: Registrant Organization Number
+        targetval: 
   sort_order: 1
   ftype: select
   premade: true
