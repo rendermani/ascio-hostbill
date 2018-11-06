@@ -1,0 +1,2363 @@
+---
+- 
+  id: 5
+  type: input
+  required: 0
+  name: Registrant Organization Number
+  key: 
+  variable: Registrant.RegistrantNumber
+  description: >
+    Please note this number is not required
+    for Individuals.
+  category: 
+  product_id: 12
+  copy_of: 0
+  options: 2
+  config: [ ]
+  sort_order: 0
+  ftype: input
+  premade: true
+  items: 
+    - 
+      id: 31
+      category_id: 5
+      name: 
+      variable_id: 
+      sort_order: 0
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+- 
+  id: 4
+  type: select
+  required: 0
+  name: Registrant Type
+  key: 
+  variable: Registrant.RegistrantType
+  description: 
+  category: 
+  product_id: 12
+  copy_of: 0
+  options: 3
+  config: 
+    conditionals: [ ]
+  sort_order: 1
+  ftype: select
+  premade: true
+  items: 
+    - 
+      id: 13
+      category_id: 4
+      name: Other
+      variable_id: ANDERS
+      sort_order: 0
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 14
+      category_id: 4
+      name: Non-Dutch EC company
+      variable_id: BGG
+      sort_order: 1
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 15
+      category_id: 4
+      name: >
+        Non-Dutch legal
+        form/enterprise/subsidiary
+      variable_id: BRO
+      sort_order: 2
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 16
+      category_id: 4
+      name: Limited company
+      variable_id: BV
+      sort_order: 3
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 17
+      category_id: 4
+      name: Limited company in formation
+      variable_id: BVI/O
+      sort_order: 4
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 18
+      category_id: 4
+      name: Cooperative
+      variable_id: COOP
+      sort_order: 5
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 19
+      category_id: 4
+      name: Limited Partnership
+      variable_id: CV
+      sort_order: 6
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 20
+      category_id: 4
+      name: Sole trader
+      variable_id: EENMANSZAAK
+      sort_order: 7
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 21
+      category_id: 4
+      name: European Economic Interest Group
+      variable_id: EESV
+      sort_order: 8
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 22
+      category_id: 4
+      name: Religious society
+      variable_id: KERK
+      sort_order: 9
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 23
+      category_id: 4
+      name: Partnership
+      variable_id: MAATSCHAP
+      sort_order: 10
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 24
+      category_id: 4
+      name: Public Company
+      variable_id: NV
+      sort_order: 11
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 25
+      category_id: 4
+      name: Mutual benefit company
+      variable_id: OWM
+      sort_order: 12
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 26
+      category_id: 4
+      name: Natural person
+      variable_id: PERSOON
+      sort_order: 13
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 27
+      category_id: 4
+      name: Shipping company
+      variable_id: REDR
+      sort_order: 14
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 28
+      category_id: 4
+      name: Foundation
+      variable_id: STICHTING
+      sort_order: 15
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 29
+      category_id: 4
+      name: Association
+      variable_id: VERENIGING
+      sort_order: 16
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+    - 
+      id: 30
+      category_id: 4
+      name: Trading partnership
+      variable_id: VOF
+      sort_order: 17
+      rel: 
+      paytype: 
+      m_setup: 
+      q_setup: 
+      s_setup: 
+      a_setup: 
+      b_setup: 
+      t_setup: 
+      p4_setup: 
+      p5_setup: 
+      d_setup: 
+      w_setup: 
+      h_setup: 
+      m: 
+      q: 
+      s: 
+      a: 
+      b: 
+      t: 
+      p4: 
+      p5: 
+      d: 
+      w: 
+      h: 
+      pricing: 0
+- 
+  id: 7
+  type: select
+  required: 0
+  name: Technical Contact Type 
+  key: 
+  variable: AdminContact.Type
+  description: 
+  category: 
+  product_id: 12
+  copy_of: 4
+  options: 3
+  config: 
+    conditionals: [ ]
+  sort_order: 2
+  ftype: select
+  premade: true
+  items: 
+    - 
+      id: 33
+      category_id: 7
+      name: Other
+      variable_id: ANDERS
+      sort_order: 0
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 34
+      category_id: 7
+      name: Non-Dutch EC company
+      variable_id: BGG
+      sort_order: 1
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 35
+      category_id: 7
+      name: >
+        Non-Dutch legal
+        form/enterprise/subsidiary
+      variable_id: BRO
+      sort_order: 2
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 36
+      category_id: 7
+      name: Limited company
+      variable_id: BV
+      sort_order: 3
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 37
+      category_id: 7
+      name: Limited company in formation
+      variable_id: BVI/O
+      sort_order: 4
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 38
+      category_id: 7
+      name: Cooperative
+      variable_id: COOP
+      sort_order: 5
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 39
+      category_id: 7
+      name: Limited Partnership
+      variable_id: CV
+      sort_order: 6
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 40
+      category_id: 7
+      name: Sole trader
+      variable_id: EENMANSZAAK
+      sort_order: 7
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 41
+      category_id: 7
+      name: European Economic Interest Group
+      variable_id: EESV
+      sort_order: 8
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 42
+      category_id: 7
+      name: Religious society
+      variable_id: KERK
+      sort_order: 9
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 43
+      category_id: 7
+      name: Partnership
+      variable_id: MAATSCHAP
+      sort_order: 10
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 44
+      category_id: 7
+      name: Public Company
+      variable_id: NV
+      sort_order: 11
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 45
+      category_id: 7
+      name: Mutual benefit company
+      variable_id: OWM
+      sort_order: 12
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 46
+      category_id: 7
+      name: Natural person
+      variable_id: PERSOON
+      sort_order: 13
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 47
+      category_id: 7
+      name: Shipping company
+      variable_id: REDR
+      sort_order: 14
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 48
+      category_id: 7
+      name: Foundation
+      variable_id: STICHTING
+      sort_order: 15
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 49
+      category_id: 7
+      name: Association
+      variable_id: VERENIGING
+      sort_order: 16
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 50
+      category_id: 7
+      name: Trading partnership
+      variable_id: VOF
+      sort_order: 17
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+- 
+  id: 8
+  type: select
+  required: 0
+  name: Technical Contact Type
+  key: 
+  variable: TechContact.Type
+  description: 
+  category: 
+  product_id: 12
+  copy_of: 7
+  options: 3
+  config: 
+    conditionals: [ ]
+  sort_order: 3
+  ftype: select
+  premade: true
+  items: 
+    - 
+      id: 51
+      category_id: 8
+      name: Other
+      variable_id: ANDERS
+      sort_order: 0
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 52
+      category_id: 8
+      name: Non-Dutch EC company
+      variable_id: BGG
+      sort_order: 1
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 53
+      category_id: 8
+      name: >
+        Non-Dutch legal
+        form/enterprise/subsidiary
+      variable_id: BRO
+      sort_order: 2
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 54
+      category_id: 8
+      name: Limited company
+      variable_id: BV
+      sort_order: 3
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 55
+      category_id: 8
+      name: Limited company in formation
+      variable_id: BVI/O
+      sort_order: 4
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 56
+      category_id: 8
+      name: Cooperative
+      variable_id: COOP
+      sort_order: 5
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 57
+      category_id: 8
+      name: Limited Partnership
+      variable_id: CV
+      sort_order: 6
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 58
+      category_id: 8
+      name: Sole trader
+      variable_id: EENMANSZAAK
+      sort_order: 7
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 59
+      category_id: 8
+      name: European Economic Interest Group
+      variable_id: EESV
+      sort_order: 8
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 60
+      category_id: 8
+      name: Religious society
+      variable_id: KERK
+      sort_order: 9
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 61
+      category_id: 8
+      name: Partnership
+      variable_id: MAATSCHAP
+      sort_order: 10
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 62
+      category_id: 8
+      name: Public Company
+      variable_id: NV
+      sort_order: 11
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 63
+      category_id: 8
+      name: Mutual benefit company
+      variable_id: OWM
+      sort_order: 12
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 64
+      category_id: 8
+      name: Natural person
+      variable_id: PERSOON
+      sort_order: 13
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 65
+      category_id: 8
+      name: Shipping company
+      variable_id: REDR
+      sort_order: 14
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 66
+      category_id: 8
+      name: Foundation
+      variable_id: STICHTING
+      sort_order: 15
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 67
+      category_id: 8
+      name: Association
+      variable_id: VERENIGING
+      sort_order: 16
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 68
+      category_id: 8
+      name: Trading partnership
+      variable_id: VOF
+      sort_order: 17
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+- 
+  id: 9
+  type: select
+  required: 0
+  name: Billing Contact Type
+  key: 
+  variable: BillingContact.Type
+  description: 
+  category: 
+  product_id: 12
+  copy_of: 8
+  options: 3
+  config: 
+    conditionals: [ ]
+  sort_order: 4
+  ftype: select
+  premade: true
+  items: 
+    - 
+      id: 69
+      category_id: 9
+      name: Other
+      variable_id: ANDERS
+      sort_order: 0
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 70
+      category_id: 9
+      name: Non-Dutch EC company
+      variable_id: BGG
+      sort_order: 1
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 71
+      category_id: 9
+      name: >
+        Non-Dutch legal
+        form/enterprise/subsidiary
+      variable_id: BRO
+      sort_order: 2
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 72
+      category_id: 9
+      name: Limited company
+      variable_id: BV
+      sort_order: 3
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 73
+      category_id: 9
+      name: Limited company in formation
+      variable_id: BVI/O
+      sort_order: 4
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 74
+      category_id: 9
+      name: Cooperative
+      variable_id: COOP
+      sort_order: 5
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 75
+      category_id: 9
+      name: Limited Partnership
+      variable_id: CV
+      sort_order: 6
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 76
+      category_id: 9
+      name: Sole trader
+      variable_id: EENMANSZAAK
+      sort_order: 7
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 77
+      category_id: 9
+      name: European Economic Interest Group
+      variable_id: EESV
+      sort_order: 8
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 78
+      category_id: 9
+      name: Religious society
+      variable_id: KERK
+      sort_order: 9
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 79
+      category_id: 9
+      name: Partnership
+      variable_id: MAATSCHAP
+      sort_order: 10
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 80
+      category_id: 9
+      name: Public Company
+      variable_id: NV
+      sort_order: 11
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 81
+      category_id: 9
+      name: Mutual benefit company
+      variable_id: OWM
+      sort_order: 12
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 82
+      category_id: 9
+      name: Natural person
+      variable_id: PERSOON
+      sort_order: 13
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 83
+      category_id: 9
+      name: Shipping company
+      variable_id: REDR
+      sort_order: 14
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 84
+      category_id: 9
+      name: Foundation
+      variable_id: STICHTING
+      sort_order: 15
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 85
+      category_id: 9
+      name: Association
+      variable_id: VERENIGING
+      sort_order: 16
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
+    - 
+      id: 86
+      category_id: 9
+      name: Trading partnership
+      variable_id: VOF
+      sort_order: 17
+      rel: Config
+      paytype: Free
+      m_setup: 0.00
+      q_setup: 0.00
+      s_setup: 0.00
+      a_setup: 0.00
+      b_setup: 0.00
+      t_setup: 0.00
+      p4_setup: 0.00
+      p5_setup: 0.00
+      d_setup: 0.00
+      w_setup: 0.00
+      h_setup: 0.00
+      m: 0.00
+      q: 0.00
+      s: 0.00
+      a: 0.00
+      b: 0.00
+      t: 0.00
+      p4: 0.00
+      p5: 0.00
+      d: 0.00
+      w: 0.00
+      h: 0.00
+      pricing: 1
