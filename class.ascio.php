@@ -34,7 +34,6 @@ Class Ascio extends DomainModule {
 	protected $lastError = false;
 	
 	function login() {
-		//echo(nl2br(print_r($this->configuration,1)));
 		syslog(LOG_INFO, "login, username: ".$this->configuration['login']['value']. " p: ", $this->configuration['password']['value']  );
 		$session = array(
 		             'Account'=> $this->configuration['username']['value'],
@@ -67,7 +66,6 @@ Class Ascio extends DomainModule {
 		return;
 	}
 	function sendRequest($functionName,$ascioParams,$try) {
-			//echo(nl2br(print_r($ascioParams,1)));
 			syslog(LOG_INFO, "Do ".$functionName  );
 			syslog(LOG_INFO,  $this->cleanAscioParams($ascioParams));
 			$ascioParams = $this->cleanAscioParams($ascioParams);
@@ -82,14 +80,14 @@ Class Ascio extends DomainModule {
 				$error =  $result." transaction failed: 554. Ascio test environemnt overloaded. Please contact partnerservice";
 				syslog(LOG_ERROR,$error);
 				$this->addError($error);
-				return;
+				return false;
 			} else if (count($status->Values->string) > 1 ){
 				$messages = join("<br/>\n",$status->Values->string);	
 			} else {
 				$messages = $status->Values->string;
 			}				
 			$this->addError($status->Message . "<br/>\n" .$messages);
-			return $status;
+			return false;
 			     
 	}
 	function Register() {
@@ -115,10 +113,10 @@ Class Ascio extends DomainModule {
 		return $result; 
 	}
 	function GetEppCode($params) {
-		echo "get epp code";
 		$params = $this->setParams($params);
 	    $ascioParams = $this->mapToOrder($params,"Update_AuthInfo");
 	    // todo: set AuthInfo before order;	
+	    var_dump($ascioParams);
 		$result = $this->request("CreateOrder",$ascioParams,true);
 		if(is_array($result)) {
 			return $result;
@@ -131,7 +129,43 @@ Class Ascio extends DomainModule {
 			$domain = $this->searchDomain();
 			$return = array();
 			$return['expires'] = date( 'Y-m-d', strtotime( $domain->ExpDate ));
-			$return['status'] = $domain->Status;
+			
+			if($domain->Status) {
+				$return['status'] = $domain->Status;
+			} else {
+				$pageInfo= array(
+					"PageIndex" => 1,
+					"PageSize" => 1
+				);
+				$orderRequest= array(
+					"OrderTypes" => ["Register_Domain","Transfer_Domain"],
+					"DomainName" =>  $this->name,
+					"PageInfo" => $pageInfo,
+					"OrderSort" => "CreDateDesc"
+				);
+				$searchOrder= array(
+					"sessionId" =>  'mySessionId',
+					"orderRequest" => $orderRequest
+				);
+				$result = $this->request("SearchOrder",$searchOrder,true);
+				$status = $result->orders->Order->Status; 
+				$statusMap = [
+					"Completed" => "Active",
+					"Received" => "Pending",
+					"Validated" => "Pending",
+					"Invalid" => "Cancelled",
+					"Pending_Internal_Processing" => "Pending",
+					"Pending_Documentation" => "Pending",
+					"Pending_End_User_Action" => "Pending",
+					"Documentation_Received" => "Pending",
+					"Documentation_Approved" => "Pending",
+					"Pending_NIC_Processing" => "Pending",
+					"Pending_NIC_Document_Approval" => "Pending",
+					"Pending_Post_Processing" => "Pending",
+					"Failed" => "Cancelled"
+				];
+				$return['status'] = $statusMap[$status];
+			}
 			return $return; 
 	}
 	function searchDomain() {
@@ -185,7 +219,6 @@ Class Ascio extends DomainModule {
 				),
 			'Comments'	=>	"Hostbill Order"
 		); 
-
 		return array(
 				'sessionId' => "set-it-later",
 				'order' => $order
@@ -217,11 +250,12 @@ Class Ascio extends DomainModule {
 			'Phone'			=>  $this->isoPhone($params["phonenumber"],$params["country"]),
 			'Fax' 			=> 	$this->isoPhone($params["phonenumber"],$params["country"])
 		);
+
 		foreach($this->domain_config as $key =>  $value) {
-			$tokens = split("\.",$key);
-			$prefix = $tokens[0];
+			$tokens = explode(".",$key);
+			$prefix = str_replace("Contact","",$tokens[0]);
 			if(strtolower($prefix)==$type) {
-				$contact[$tokens[1]] = $value["value"] | $value["variable_id"];
+				$contact[$tokens[1]] =  $value["variable_id"] | $value["value"];
 			}
 		}
 		return array_merge($contactName,$contact);
