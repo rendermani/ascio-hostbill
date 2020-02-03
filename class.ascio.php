@@ -65,7 +65,7 @@ Class Ascio extends DomainModule {
 		}	
 		return;
 	}
-	function sendRequest($functionName,$ascioParams) {
+	function sendRequest($functionName,$ascioParams,$try) {
 			syslog(LOG_INFO, "Do ".$functionName  );
 			syslog(LOG_INFO,  $this->cleanAscioParams($ascioParams));
 			$ascioParams = $this->cleanAscioParams($ascioParams);
@@ -152,7 +152,8 @@ Class Ascio extends DomainModule {
 				$statusMap = [
 					"Completed" => "Active",
 					"Received" => "Pending",
-					"Validated" => "Pending",	
+					"Validated" => "Pending",
+					"Invalid" => "Cancelled",
 					"Pending_Internal_Processing" => "Pending",
 					"Pending_Documentation" => "Pending",
 					"Pending_End_User_Action" => "Pending",
