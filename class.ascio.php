@@ -65,7 +65,7 @@ Class Ascio extends DomainModule {
 		}	
 		return;
 	}
-	function sendRequest($functionName,$ascioParams,$try) {
+	function sendRequest($functionName,$ascioParams) {
 			syslog(LOG_INFO, "Do ".$functionName  );
 			syslog(LOG_INFO,  $this->cleanAscioParams($ascioParams));
 			$ascioParams = $this->cleanAscioParams($ascioParams);
